@@ -1,4 +1,4 @@
-# Working Table Diary（工作桌日記）
+# Todotable
 
 透明側邊欄日記與開發工作台。前端以 React 撰寫，透過 Tauri 2 封裝為 Windows `.exe`／`.msi`、macOS `.app` 等桌面安裝檔。
 
@@ -159,7 +159,7 @@ npm -v
 適合快速查看 UI、調整 JSX，無需安裝 Rust。
 
 ```powershell
-cd d:\workingtable-0.3.0\workingtable-0.3.0
+cd d:\...
 npm install
 npx --yes serve . -l 3456
 ```
