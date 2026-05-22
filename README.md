@@ -307,7 +307,6 @@ workingtable-0.3.0/
 - 翻譯定義：`v2/i18n.jsx` 內 `MESSAGES['zh-TW']`、`MESSAGES.en`
 - 元件用法：`const { t } = useI18n();` 搭配 `t('key')` 或 `t('key', { count: 3 })`
 - 切換位置：標題列 **中文 | English**
-- 舊版韓文預設專案名（如 `내 프로젝트`）在切換語言或載入時會自動改為「我的專案」（僅限內建預設名稱，自訂名稱不受影響）
 
 新增翻譯：在兩種語言的 `MESSAGES` 加入相同 key，並於 JSX 以 `t('your.key')` 取代硬編碼字串。
 
@@ -340,14 +339,9 @@ workingtable-0.3.0/
 | 畫面全白或無內容 | 使用 `http://localhost` 預覽；檢查主控台錯誤；確認 `dist/` 已透過 `npm run dist` 產生 |
 | 建置失敗：缺少圖示 | 執行 `npx tauri icon src-tauri/icons/icon.png` |
 | AI 無法使用 | `window.claude.complete` 僅在特定環境可用；需自行修改 `v2/ai.jsx` 串接 API |
-| 專案名仍為韓文 | 點 **中文** 觸發遷移，或清除應用 localStorage 後重開 |
 | 修改 JSX 未生效 | 重新整理視窗；桌面版執行 `npm run dev` 前會重建 `dist/` |
 
 ---
-
-## 授權與致謝
-
-本專案基於 [binglehaepi/workingtable](https://github.com/binglehaepi/workingtable)。使用前請遵守原專案授權條款。
 
 相關連結：
 
